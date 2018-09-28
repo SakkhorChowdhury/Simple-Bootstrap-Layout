@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style.CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bootstrap Layout</title>
+</head>
+<body>
+<div id="page">
+
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <h4>
+                    <a href="index.html" class="navbar-brand">The Big Lebowski</a>
+                </h4>
+            <button type="button" class="btn btn-success navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
+
+    </header>
+    <section id="body">
+        <div class="container">
+            <h1 class="border-bottom border-success mb-4 pb-2">Contact Us</h1>
+            <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
+
+            <ul class="nav nav-tabs nav-fill">
+                <li class="nav-item">
+                    <a href="#form" class="nav-link active" id="form-tab" data-toggle="tab" role="tab" aria-controls="form" aria-selected="true">Contact Form</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#address" class="nav-link" id="address-tab" data-toggle="tab" role="tab" aria-controls="address" aria-selected="true">Address</a></li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="form" role="tabpanel" aria-labelledby="form-tab">
+                    <form>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label col-form-label-sm">Your Name</label>
+                            <div class="col-sm-10">
+                                <input
+                                        type="text"
+                                        class="form-control form-control-sm"
+                                        id="name"
+                                        placeholder="Write your name"
+                                        name="user-name"
+                                        value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                            <div class="col-sm-10">
+                                <input
+                                        type="email"
+                                        class="form-control form-control-sm"
+                                        id="email"
+                                        placeholder="Write your email"
+                                        name="user-email"
+                                        value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label col-form-label-sm">Reason</label>
+                            <div class="col-sm-10">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                        <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Adoration</a></li>
+                                        <li><a href="#">Ordering a White Russian</a></li>
+                                        <li><a href="#">Complaint</a></li>
+                                     <li><a href="#">I am lost</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="message" class="col-sm-2 col-form-label col-form-label-sm">Message</label>
+                            <div class="col-sm-10">
+                                <textarea id="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10 offset-md-2">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                    <h3>Our fake address</h3>
+                    <div>
+                        <address>
+                            Big Lebowski Fan Page<br />
+                            123 Main Street<br />
+                            Rug Ties The Room Together, CA 98765<br />
+                            <abbr title="Phone">P:</abbr>
+                            425.555.0100
+                        </address>
+                        <address>
+                            <strong>Support:</strong>   <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
+                            <strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
+                        </address>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <footer>
+        <div class="container">
+             <p>Text placeholders courtesy of <a href="http://www.github.com/SakkhorChowdhury">Sakkhor Chowdhry</a>.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 1500
+    })
+
+    $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+
+        var $target = $( event.currentTarget );
+
+        $target.closest( '.btn-group' )
+                .find( '[data-bind="label"]' ).text( $target.text() )
+                .end()
+                .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+        return false;
+
+    });
+</script>
+</body>
+</html>
